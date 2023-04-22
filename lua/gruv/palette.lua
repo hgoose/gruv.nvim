@@ -1,4 +1,4 @@
--- gruvbox palette
+-- gruv palette
 local M = {}
 
 M.colors = {

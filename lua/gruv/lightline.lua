@@ -1,19 +1,19 @@
 -- lightline support
-local theme = require("gruvbox.groups").setup()
+local theme = require("gruv.groups").setup()
 
-local bg0 = theme.GruvboxBg0.fg
-local bg1 = theme.GruvboxBg1.fg
-local bg2 = theme.GruvboxBg2.fg
-local bg4 = theme.GruvboxBg4.fg
-local fg1 = theme.GruvboxFg1.fg
-local fg4 = theme.GruvboxFg4.fg
+local bg0 = theme.gruvBg0.fg
+local bg1 = theme.gruvBg1.fg
+local bg2 = theme.gruvBg2.fg
+local bg4 = theme.gruvBg4.fg
+local fg1 = theme.gruvFg1.fg
+local fg4 = theme.gruvFg4.fg
 
-local yellow = theme.GruvboxYellow.fg
-local blue = theme.GruvboxBlue.fg
-local aqua = theme.GruvboxAqua.fg
-local orange = theme.GruvboxOrange.fg
-local red = theme.GruvboxRed.fg
-local green = theme.GruvboxGreen.fg
+local yellow = theme.gruvYellow.fg
+local blue = theme.gruvBlue.fg
+local aqua = theme.gruvAqua.fg
+local orange = theme.gruvOrange.fg
+local red = theme.gruvRed.fg
+local green = theme.gruvGreen.fg
 
 local lightline_theme = {
   normal = {

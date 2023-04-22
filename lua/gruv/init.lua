@@ -17,7 +17,7 @@ M.config = {
   invert_tabline = false,
   invert_intend_guides = false,
   inverse = true, -- invert background for search, diffs, statuslines and errors
-  contrast = "", -- can be "hard", "soft" or empty string
+  contrast = "",  -- can be "hard", "soft" or empty string
   palette_overrides = {},
   overrides = {},
   dim_inactive = false,
@@ -27,7 +27,7 @@ M.config = {
 function M.setup(config)
   if config ~= nil and type(config.italic) == "boolean" then
     vim.notify(
-      "[gruvbox] italic config has change. please check https://github.com/ellisonleao/gruvbox.nvim/issues/220",
+      "[gruv] italic config has change. please check https://github.com/ellisonleao/gruvbox.nvim/issues/220",
       vim.log.levels.WARN
     )
     config.italic = M.config.italic
@@ -37,7 +37,7 @@ end
 
 M.load = function()
   if vim.version().minor < 8 then
-    vim.notify_once("gruvbox.nvim: you must use neovim 0.8 or higher")
+    vim.notify_once("gruv.nvim: you must use neovim 0.8 or higher")
     return
   end
 
@@ -46,10 +46,10 @@ M.load = function()
     vim.cmd.hi("clear")
   end
 
-  vim.g.colors_name = "gruvbox"
+  vim.g.colors_name = "gruv"
   vim.o.termguicolors = true
 
-  local groups = require("gruvbox.groups").setup()
+  local groups = require("gruv.groups").setup()
 
   -- add highlights
   for group, settings in pairs(groups) do
