@@ -1,19 +1,19 @@
 -- lightline support
-local theme = require("black.groups").setup()
+local theme = require("black2.groups").setup()
 
-local bg0 = theme.blackBg0.fg
-local bg1 = theme.blackBg1.fg
-local bg2 = theme.blackBg2.fg
-local bg4 = theme.blackBg4.fg
-local fg1 = theme.blackFg1.fg
-local fg4 = theme.blackFg4.fg
+local bg0 = theme.black2Bg0.fg
+local bg1 = theme.black2Bg1.fg
+local bg2 = theme.black2Bg2.fg
+local bg4 = theme.black2Bg4.fg
+local fg1 = theme.black2Fg1.fg
+local fg4 = theme.black2Fg4.fg
 
-local yellow = theme.blackYellow.fg
-local blue = theme.blackBlue.fg
-local aqua = theme.blackAqua.fg
-local orange = theme.blackOrange.fg
-local red = theme.blackRed.fg
-local green = theme.blackGreen.fg
+local yellow = theme.black2Yellow.fg
+local blue = theme.black2Blue.fg
+local aqua = theme.black2Aqua.fg
+local orange = theme.black2Orange.fg
+local red = theme.black2Red.fg
+local green = theme.black2Green.fg
 
 local lightline_theme = {
   normal = {

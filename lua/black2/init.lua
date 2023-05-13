@@ -27,7 +27,7 @@ M.config = {
 function M.setup(config)
   if config ~= nil and type(config.italic) == "boolean" then
     vim.notify(
-      "[black] italic config has change. please check https://github.com/ellisonleao/blackbox.nvim/issues/220",
+      "[black2] italic config has change. please check https://github.com/ellisonleao/blackbox.nvim/issues/220",
       vim.log.levels.WARN
     )
     config.italic = M.config.italic
@@ -37,7 +37,7 @@ end
 
 M.load = function()
   if vim.version().minor < 8 then
-    vim.notify_once("black.nvim: you must use neovim 0.8 or higher")
+    vim.notify_once("black2.nvim: you must use neovim 0.8 or higher")
     return
   end
 
@@ -46,10 +46,10 @@ M.load = function()
     vim.cmd.hi("clear")
   end
 
-  vim.g.colors_name = "black"
+  vim.g.colors_name = "black2"
   vim.o.termguicolors = true
 
-  local groups = require("black.groups").setup()
+  local groups = require("black2.groups").setup()
 
   -- add highlights
   for group, settings in pairs(groups) do

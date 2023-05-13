@@ -1,4 +1,4 @@
--- black palette
+-- black2 palette
 local M = {}
 
 M.colors = {
@@ -41,7 +41,7 @@ M.colors = {
 }
 
 M.get_base_colors = function(bg, contrast)
-  local config = require("blackbox").config
+  local config = require("black2").config
   local p = M.colors
 
   for color, hex in pairs(config.palette_overrides) do
