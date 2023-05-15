@@ -22,7 +22,7 @@ M.colors = {
   bright_blue = "#83a598",
   bright_purple = "#d3869b",
   bright_aqua = "#8ec07c",
-  bright_orange = "#fe8019",
+  bright_orange = "#4E50E5",
   neutral_red = "#cc241d",
   neutral_green = "#98971a",
   neutral_yellow = "#d79921",
@@ -36,7 +36,7 @@ M.colors = {
   faded_blue = "#076678",
   faded_purple = "#8f3f71",
   faded_aqua = "#427b58",
-  faded_orange = "#D54EE5",
+  faded_orange = "#af3a03",
   gray = "#928374",
 }
 
